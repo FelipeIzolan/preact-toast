@@ -1,11 +1,11 @@
 import type { CSSProperties, JSX } from "preact/compat"
 
-export type ToasterPosition = "top-left" | "top-center" | "top-right" | "bottom-left" | "bottom-center" | "bottom-right";
+export type ToastPosition = "top-left" | "top-center" | "top-right" | "bottom-left" | "bottom-center" | "bottom-right";
 
 export type ToastConfig = {
   ms?: number,
   style?: CSSProperties,
-  position?: ToasterPosition,
+  position?: ToastPosition,
   className?: string,
 };
 
@@ -23,7 +23,7 @@ export type ToasterAction = {
 };
 
 export type ToasterProps = {
+  position: ToastPosition,
   className?: string,
-  style?: CSSProperties
+  style?: CSSProperties,
 };
-
