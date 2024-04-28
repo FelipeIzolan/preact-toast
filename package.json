@@ -2,7 +2,11 @@
   "name": "preact-toast",
   "description": "preact-toast | make delicious toast in preact.",
   "version": "1.0.0",
-  "main": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
   "scripts": {
     "build": "rollup -c"
   },
