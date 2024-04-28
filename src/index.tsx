@@ -16,12 +16,11 @@ const Toaster: FunctionalComponent<ToasterProps> = ({ className, style, position
   }, []);
 
   useLayoutEffect(() => {
-    for (let i = 0; i < toast.length; i++) {
-      let t = toast[i];
-      let c = toasterRef.current!.children as HTMLCollectionOf<HTMLLIElement>;
-
-      c[i].style.translate = offset(toast, c, i, t.config.position ?? position);
-    }
+    let c = toasterRef.current!.children as HTMLCollectionOf<HTMLLIElement>;
+  
+    for (let i = 0; i < c.length; i++) 
+      c[i].style.translate = offset(toast, c, i, position, toast[i].config.position);
+    
   }, [toast]);
 
   const toasts = toast.map(t =>

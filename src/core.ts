@@ -10,7 +10,7 @@ const setDispatcher = (d: Dispatch<ToasterAction> | null) => ToasterDispatcher =
 const reducer = (state: ToasterState, action: ToasterAction) => {
   switch (action.type) {
     case "ADD": 
-      return [(action.payload as Toast), ...state];
+      return [...state, (action.payload as Toast)];
     case "DEL":
       clearInterval(action.payload as number);
       return [...state.filter(x => x.id != (action.payload as number))];
