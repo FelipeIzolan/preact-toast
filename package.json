@@ -1,0 +1,31 @@
+{
+  "name": "preact-toast",
+  "description": "preact-toast | make delicious toast in preact.",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "type": "module",
+  "keywords": [
+    "preact",
+    "toast",
+    "preact-toast"
+  ],
+  "author": "Felipe Izolan",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.12.7",
+    "preact": "^10.20.2",
+    "rollup": "^4.16.4",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FelipeIzolan/preact-toast"
+  }
+}
